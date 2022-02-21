@@ -1,0 +1,228 @@
+
+*{
+
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    
+
+}
+
+body{
+
+    font-family: 'Open Sans', sans-serif;
+    /*color:#fff;*/
+    background-color: #fff;
+}
+img {
+    width:100%;
+}
+
+i {
+
+   /* width:200px;*/
+  /* width:50%;*/
+}
+
+p {
+    margin:20px 0;
+}
+
+
+a:hover{
+
+    color:#333;
+}
+
+a{  
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+
+    list-style: none;
+}
+
+html{
+
+    font-size: 15px;
+}
+h1 {
+
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1rem;
+}
+
+h1,h2{
+    margin: 20px 0;
+}
+
+/*header section*/
+.mainImage {
+    background: url("/images/home/showcase.jpg")center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+   
+}
+.logo {
+      margin: 30px auto;
+      color: #fff;
+  
+}
+.text-logo {
+
+color: #28a745;
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.navbar li {
+   
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+    
+}
+.navbar li a {
+    
+    font-size: 1.5rem;
+}
+.Content  {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ color: #fff;
+
+}
+
+
+.Content a {
+    background-color: #28a745;
+    border: 2px solid none;
+    border-radius: 15%;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+/*styling the main section*/
+
+/*styling the ABOUT section*/
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.serviceArticle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px; 
+
+}
+
+.moredetails {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/*.moredetails img {
+ width:100%;
+
+}*/
+.moredetailsArticle {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100vw;
+background-color: #28a745;
+color: #fff;
+
+}
+.moredetailsArticle h3 {
+ margin-top: 100px;
+
+}
+
+.moredetailsArticle a{
+
+    border: 2px solid #fff;
+    border-radius: 15%;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+
+/*media querie desktop*/
+
+@media screen and (min-width: 786px) {
+
+    .navbar {
+        display: flex;
+       flex-direction: row;
+        
+
+    }
+    .logo-navbar {
+
+        display: flex;
+
+    }
+    .logo {
+    
+        margin-right:auto;
+     }
+     
+     .services {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .serviceArticle {
+        margin-right: 40px;
+    }
+    .moredetails img {
+       width:60vw;
+       height: 400px;/*I want to change this with flex propertie*/
+       
+       }
+
+    .moredetails {
+        display:flex;
+        flex-direction: row;
+        
+        
+    }
+    .moredetailsArticle {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+       height: 400px;/*I want to change this with flex propertie*/
+        padding: 20px;
+        
+    }
+}
+
